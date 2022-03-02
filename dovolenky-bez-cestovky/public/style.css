@@ -39,8 +39,10 @@ section{
 }
 
 .item img{
-    width: 1000px;
+    width: 960px;
     height: 400px;
+    padding: 20px;
+    border-radius: 35px;
     object-fit: cover;
 }
 
