@@ -1,10 +1,24 @@
 import React from 'react';
-import Header from './components/Header';
+import Navbar from './components/Navbar';
+import data from "./data"
+import Card from "./components/Card"
+
+const items = data.map(item => {
+  return(
+    <Card 
+      item={item}
+    />
+  )
+  
+})
 
 function App() {
   return (
     <>
-    <Header />
+      <Navbar />
+      <section>
+        {items}
+      </section>
     </>
   )
 }
