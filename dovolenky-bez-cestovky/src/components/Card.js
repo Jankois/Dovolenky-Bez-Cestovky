@@ -3,14 +3,14 @@ import React from 'react'
 export default function Card(props){
     return(
         <div className="item">
-            <h2>{props.item.title}</h2>
-            <img src={props.item.imageUrl} alt=""/>
+            <h2>{props.title}</h2>
+            <img src={props.imageUrl} alt=""/>
             <div className="desc">
                 <div>
-                <p>{props.item.description}</p>
-                <h1>{props.item.price}</h1>
+                <p>{props.descrpition}</p>
+                <h1>{props.price} €</h1>
                 </div>
-                <button>Zisti viac</button>
+                <button id={props.id}>Zisti viac</button>
             </div>
         </div>
     )

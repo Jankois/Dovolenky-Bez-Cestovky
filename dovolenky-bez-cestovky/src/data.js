@@ -1,3 +1,5 @@
+//UZ NEPOUZIVANY PLACEHOLDER
+
 export default [
     {
         title: "Tuvalu",
