@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hostiteľ: 127.0.0.1
--- Čas generovania: So 12.Mar 2022, 17:43
+-- Čas generovania: St 04.Máj 2022, 17:10
 -- Verzia serveru: 10.4.22-MariaDB
 -- Verzia PHP: 8.1.2
 
@@ -32,19 +32,20 @@ CREATE TABLE `clanky` (
   `descrpition` varchar(255) DEFAULT NULL,
   `image_url` varchar(255) DEFAULT NULL,
   `price` int(11) NOT NULL,
-  `title` varchar(255) DEFAULT NULL
+  `title` varchar(255) DEFAULT NULL,
+  `date` varchar(255) DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
 
 --
 -- Sťahujem dáta pre tabuľku `clanky`
 --
 
-INSERT INTO `clanky` (`id`, `descrpition`, `image_url`, `price`, `title`) VALUES
-(0, 'Majú tam len letisko a nič iné a jediná vec na ktorej zarábajú je .tv koniec domény', 'https://ecoheromagazine.com/wp-content/uploads/2020/03/Tuvalu.jpg', 69420, 'Tuvalu'),
-(1, 'Ani neviem kde to je ale znie to vtipne', 'http://www.masbodrog.sk/imgcache/e-img-56.jpg', 69420, 'Streda nad bodrogom'),
-(2, 'Nechoď sem, fakt ne bráško neodporúčam', 'https://kosicednes.sk/wp-content/uploads/2021/09/PRED7-1024x768.jpg', 69420, 'Lunník IX'),
-(3, 'Nie to čo ide do zapalovačov', 'https://www.idem.firotour.sk/img/1273/x/bhutan-09.jpg?h=87d6e281b6e3ce1401f875136c0c1c5e', 69420, 'Bhutan'),
-(4, 'Tu zistíš zač je toho veľkolepá krádež auta päť', 'https://i.imgur.com/j9dP8Sd.jpg', 69420, 'Los Santos');
+INSERT INTO `clanky` (`id`, `descrpition`, `image_url`, `price`, `title`, `date`) VALUES
+(0, 'Majú tam len letisko a nič iné a jediná vec na ktorej zarábajú je .tv koniec domény', 'https://ecoheromagazine.com/wp-content/uploads/2020/03/Tuvalu.jpg', 69420, 'Tuvalu', '1. 9. 1939 – 2. 9. 1945'),
+(1, 'Ani neviem kde to je ale znie to vtipne', 'http://www.masbodrog.sk/imgcache/e-img-56.jpg', 69420, 'Streda nad bodrogom', '1. 9. 1939 – 2. 9. 1945'),
+(2, 'Nechoď sem, fakt ne bráško neodporúčam', 'https://kosicednes.sk/wp-content/uploads/2021/09/PRED7-1024x768.jpg', 69420, 'Lunník IX', '1. 9. 1939 – 2. 9. 1945'),
+(3, 'Nie to čo ide do zapalovačov', 'https://www.idem.firotour.sk/img/1273/x/bhutan-09.jpg?h=87d6e281b6e3ce1401f875136c0c1c5e', 69420, 'Bhutan', '1. 9. 1939 – 2. 9. 1945'),
+(4, 'Tu zistíš zač je toho veľkolepá krádež auta päť', 'https://i.imgur.com/j9dP8Sd.jpg', 69420, 'Los Santos', '1. 9. 1939 – 2. 9. 1945');
 
 -- --------------------------------------------------------
 

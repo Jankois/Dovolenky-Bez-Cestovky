@@ -46,7 +46,7 @@ section{
     object-fit: cover;
 }
 
-.item h2,h1,p{
+.item h3,h2,h1,p{
     margin-left: 20px;
 }
 

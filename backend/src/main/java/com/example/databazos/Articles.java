@@ -10,6 +10,7 @@ public class Articles {
     @GeneratedValue(strategy = GenerationType.AUTO)
     public long id;
     public String title;
+    public String date;
     public String imageUrl;
     public String descrpition;
     public int price;
