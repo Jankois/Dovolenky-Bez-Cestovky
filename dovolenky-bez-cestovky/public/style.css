@@ -77,3 +77,9 @@ section{
     background-color: rgb(73, 73, 73);
     transition: background-color 0.2s linear;
 }
+
+.zistiViacButton{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    font-size: large;
+}
