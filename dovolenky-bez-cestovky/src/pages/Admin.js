@@ -7,9 +7,11 @@ import {
   Button
 } from '@material-ui/core'
 import axios from 'axios'
+import { useNavigate } from "react-router-dom"
 
 function Admin() {
   
+  const navigate = useNavigate();
   const [value , setValue] = useState("");
   const handleChange = e => {
   setValue(e.target.value);
@@ -32,11 +34,11 @@ function Admin() {
   .then(function(response) {
    if(response.data == true)
    {
-     console.log("prihlaseny");
+     navigate("/admin/options");
    }
    else
    {
-     console.log("neprihlaseny");
+     alert("Zlé prihlasovacie údaje");
    }
   })
   }
